@@ -56,6 +56,12 @@
     })
     console.table(ordered);
 
+
+    const ordered2 = inventors.sort((a, b) => a.year> b.year ? 1 : -1); //same as the one before just using arrow function
+    
+    console.table(ordered2);
+
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
