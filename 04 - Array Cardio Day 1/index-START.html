@@ -123,7 +123,27 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car',
-     'van', 'car', 'truck' ];
+     'van', 'car', 'truck', "car" ];
+
+    const output= data.reduce((total,curr) => 
+    {total[curr] ?  total[curr]++ : total[curr]=1; 
+    return total;} //using arrow function 
+    //   if(total[curr]){
+    //     total[curr]++;
+    //   }
+    //   else{
+    //   total[curr]=1;
+    //   }
+    //   return total;
+    // }
+    ,{}); 
+    console.table(output);
+
+    
+
+   
+
+     
 
   </script>
 </body>
